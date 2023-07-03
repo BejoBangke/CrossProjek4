@@ -1,0 +1,36 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrossProjek4.Views.LoginPage"
+             Title="LoginPage">
+
+    <Grid BackgroundColor="White">
+        <StackLayout Spacing="20" Padding="30" HorizontalOptions="CenterAndExpand">
+            <StackLayout Margin="0,200,0,0">
+                <Frame BorderColor="Gray" BackgroundColor="White" CornerRadius="5" Padding="40">
+                    <StackLayout Spacing="15">
+                        <Entry x:Name="UsernameEntry"
+                       Placeholder="Username"
+                       Keyboard="Text"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand" />
+
+                        <Entry x:Name="PasswordEntry"
+                       Placeholder="Password"
+                       IsPassword="True"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand" />
+
+                        <Button Text="Login"
+                        Clicked="LoginButton_Clicked"
+                        HorizontalOptions="Center"
+                        WidthRequest="200"
+                            TextColor="White"
+                            BackgroundColor="Blue"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+
+</ContentPage>

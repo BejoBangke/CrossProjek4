@@ -1,0 +1,50 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrossProjek4.Views.Kontrol"
+             Title="Kontrol">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="LightBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="LightButtonBackgroundColor">#F0F0F0</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                 BackgroundColor="{StaticResource LightBackgroundColor}">
+
+        <Label Text="Kontrol Mesin"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,0,0,30" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <StackLayout>
+                <ImageButton x:Name="OnButton"
+                             Source="on.svg"
+                             WidthRequest="150"
+                             HeightRequest="200"
+                            
+                             Clicked="OnButton_Clicked" />
+                <Label Text="On"
+                       HorizontalOptions="Center"
+                       FontSize="16"
+                       TextColor="Black"
+                       Margin="0,5,0,0" />
+            </StackLayout>
+
+            <StackLayout Margin="60,0,0,0">
+                <ImageButton x:Name="OffButton"
+                             Source="off.svg"
+                             WidthRequest="150"
+                             HeightRequest="200"
+                            
+                             Clicked="OffButton_Clicked" />
+                <Label Text="Off"
+                       HorizontalOptions="Center"
+                       FontSize="16"
+                       TextColor="Black"
+                       Margin="0,5,0,0" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
